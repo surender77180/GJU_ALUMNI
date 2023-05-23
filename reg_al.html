@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Gju Alumni</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+    <div class="center">
+        <div class="head">
+            <img src="/gju.jpg" />
+        </div>
+        <h1>ALUMNI REGISTRATION FORM</h1>
+        <form method="post" id="main_form">
+            <div class="txt_field">
+                <input type="text" name="name" placeholder=" " required />
+                <span></span>
+                <label class="req">Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" name="email" placeholder=" " required />
+                <span></span>
+                <label class="req">Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="email" name="alt_email" placeholder=" ">
+                <span></span>
+                <label>Alternate Email</label>
+            </div>
+            <div class="course txt_field" >
+                <select name="dept_name">
+                    <option value="1">Select Department</option>
+                    <option value="2">Department of Communication Management and Technology</option>
+                    <option value="3">Department of Environmental Science & Engineering</option>
+                    <option value="4">Department of Bio & Nano Technology</option>
+                    <option value="5">Department of Food Technology</option>
+                    <option value="6">Haryana School Of Business</option>
+                    <option value="7">Department of Physics</option>
+                    <option value="8">Department of Chemistry</option>
+                    <option value="9">Department of Mathematics</option>
+                    <option value="10">Department of Data Science</option>
+                    <option value="11">Department of Printing Technology</option>
+                    <option value="12">Department of Computer Science & Engineering</option>
+                    <option value="13">Department of Electronics & Communication Engineering</option>
+                    <option value="14">Department of Biomedical Engineering</option>
+                    <option value="15">Department of Mechanical Engineering</option>
+                    <option value="16">Department of Electrical Engineering</option>
+                    <option value="17">Department of Civil Engineering</option>
+                    <option value="18">Department of Emerging Technology</option>
+                    <option value="19">Department of Physiotherapy</option>
+                    <option value="20">Department of Pharmaceutical Sciences</option>
+                    <option value="21">Department of Religious Stdies</option>
+                    <option value="22">Board of Studies & Research in Education (Only for Affiliated Colleges)</option>
+                    <option value="23">Board of Studies & Research in Law (Only for Affiliated Colleges)</option>
+                    <option value="24">Board of Studies & Research in Humanities & Social Sciences</option>
+                    <option value="25">Department of Applied Psychology</option>
+                    <option value="26">Deparment of Economics</option>
+                    <option value="27">Deparment of Hindi</option>
+                    <option value="28">Deparment of English</option>
+                </select>
+            </div>
+            <div class="course txt_field">
+                <select name="course">
+                    <option value=' 1 '>Select the Course</option>
+                    <option value=' 2 '> BA </option>
+                    <option value=' 3 '> B com </option>
+                    <option value=' 4 '> BCA </option>
+                    <option value=' 5 '> MCA </option>
+                    <option value=' 6 '> Bsc </option>
+                    <option value=' 7 '> Msc </option>
+                    <option value=' 8 '> m com </option>
+                    <option value=' 9 '> BBA</option>
+                    <option value=' 10 '> MBA </option>
+                </select>
+            </div>
+            <div class="course txt_field">
+                <select name="year">
+                    <option value=' 1 '>Select the Year</option>
+                    <option value=' 2 '> 1995 </option>
+                    <option value=' 3 '> 1996 </option>
+                    <option value=' 4 '> 1997 </option>
+                    <option value=' 5 '> 1998 </option>
+                    <option value=' 6 '> 1999 </option>
+                    <option value=' 7 '> 2000 </option>
+                    <option value=' 8 '> 2001 </option>
+                    <option value=' 9 '> 2002 </option>
+                    <option value=' 10 '> 2003 </option>
+                    <option value=' 11 '> 2004 </option>
+                    <option value=' 12 '> 2005 </option>
+                    <option value=' 13 '> 2006 </option>
+                    <option value=' 14 '> 2007 </option>
+                    <option value=' 15 '> 2008 </option>
+                    <option value=' 16 '> 2009 </option>
+                    <option value=' 17 '> 2010 </option>
+                    <option value=' 18 '> 2011 </option>
+                    <option value=' 19 '> 2012 </option>
+                    <option value=' 20 '> 2013 </option>
+                    <option value=' 21 '> 2014 </option>
+                    <option value=' 22 '> 2015 </option>
+                    <option value=' 23 '> 2016 </option>
+                    <option value=' 24 '> 2017 </option>
+                    <option value=' 25 '> 2018 </option>
+                    <option value=' 26 '> 2019 </option>
+                    <option value=' 27 '> 2020 </option>
+                    <option value=' 28 '> 2021 </option>
+                    <option value=' 29 '> 2022 </option>
+                    <option value=' 30 '> 2023 </option>
+                    <option value=' 31 '> 2024 </option>
+                </select>
+            </div>
+            <div class="txt_field">
+                <input type="date" name="dob" placeholder=" " required />
+                <span></span>
+                <label class="req">Date of Birth</label>
+            </div>
+            <div class="txt_field">
+                <input type="number" name="mobile" placeholder=" " required />
+                <label class="req">Mobile Number</label>
+            </div>
+            <div class="txt_field">
+                <input type="number" name="alt_mobile" placeholder=" " />
+                <label>Alternate Mobile Number</label>
+            </div>
+            <div class="txt_field">
+                <input type="number" name="enroll" placeholder=" " required />
+                <label class="req">Enrollment No / IITR</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="org" placeholder=" " />
+                <label>Organization</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="desig" placeholder=" "/>
+                <label>Designation</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="crt_add" placeholder=" " required />
+                <label class="req">Current Address</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="alt_add" placeholder=" " />
+                <label>Address for correspondence</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="city" placeholder=" " required />
+                <label class="req">City / Town</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" name="country" placeholder=" " required />
+                <label class="req">Country</label>
+            </div>
+            <div class="txt_field">
+                <input type="url" name="linked" placeholder=" " />
+                <label>Your Linkdin URL</label>
+            </div>
+            <div class="txt_field">
+                <input type="url" name="website" placeholder=" " />
+                <label>Your Website URL</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="permission"/>
+                <label>I agree all statements in
+                    <a href="#!">Terms of service</a>
+                </label>
+            </div>
+            <input type="submit" value="Submit">
+            <div class="sign_up">
+                Have already an account?
+                <a href="/index.html">Login here</a>
+            </div>
+        </form>
+
+    </div>
+    <script src="/index.js"></script>
+</body>
+
+</html>

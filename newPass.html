@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="center">
+        <div class="head">
+            <img src="/gju.jpg" />
+        </div>
+        <h1>Reset Password</h1>
+        <script> alert("Please create new password that you don't use on any other site.") </script>
+        <form method="#">
+            <div class="head-line">
+                <h3>Create a strong password</h3>
+            </div>
+            <div class="txt_field" id="pass">
+                <input type="password" id='showpass' name="new_pass" placeholder=" " required />
+                <i id="iconeye" onclick="passFunction()" class="fa fa-eye-slash"></i>
+                <span></span>
+                <label>Create new password</label>
+            </div>
+            <div class="txt_field" id="pass">
+                <input type="password" id="pass2" name="con_pass" placeholder=" " required />
+                <i id="iconeye" onclick="passFunction()" class="fa fa-eye-slash"></i>
+                <span></span>
+                <label>Confirm your password</label>
+            </div>
+            <div>
+                <input type="submit" value="Save" >
+            </div>
+        </form>
+    </div>
+    <script src="check_pass.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

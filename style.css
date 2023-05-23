@@ -1,0 +1,151 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: none;
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    background:linear-gradient(120deg, #2980b9, #8e44ad);
+}
+.center{
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    background: white;
+    border-radius: 10px;
+}
+.center h1{
+    text-align: center;
+    border-bottom: 2px solid silver;
+    text-shadow: 3px -3px 15px black;
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #addeda;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 22px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: black;
+    transform: translateY(-50%);
+    font-size: 26px;
+    pointer-events: none;
+    transition: .5s;
+}
+.txt_field span ::before{
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #2691d9;
+}
+.txt_field input:focus ~ label,
+.txt_field input:not(:placeholder-shown) ~ label{
+    top: -5px;
+    color: #2691d9; 
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    margin-bottom:10px ;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+}
+.sign_up{
+    margin: 10px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.sign_up a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.sign_up a:hover{
+    text-decoration: underline;
+}
+.course select{
+    width: 100%;
+    color:  black;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+.check{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+}
+.check a{
+    color: #2691d9;
+    text-decoration: none;
+}
+.check:hover{
+    text-decoration: underline;
+}
+.req::after{
+    content: "*";
+    color: red;
+}
+.head-line p{
+    color: #aadeb9;
+    /* border: 1px solid black; */
+    text-align: center;
+}
+.not-match{
+    color: red;
+}
+#pass{
+    display: flex;
+    justify-content: space-between;
+
+}
